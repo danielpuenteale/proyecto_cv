@@ -1,3 +1,60 @@
 body {
-  background-color: #9e8c6c;
+  display: flex;
+  justify-content: center;
+}
+
+.pagina {
+  width: 375px;
+  height: 4477px;
+  background-color: rgb(194, 194, 255);
+}
+
+.color_marron {
+  color: #9e8c6c;
+}
+
+ul {
+  list-style-type: none;
+}
+
+li {
+  margin-left: -40px;
+}
+
+img {
+  display: flex;
+  margin: 0 auto;
+}
+
+.nombre {
+  display: flex;
+  justify-content: center;
+  font-family: "Playfair Display", serif;
+}
+
+.logos{
+  display: flex;
+  justify-content: center;
+  margin: 100px;
+}
+
+.titulo_abajo{
+  display: flex;
+  justify-content: center;
+}
+
+.correo{
+  display: flex;
+  justify-content: center;
+}
+
+.num_telefono{
+  display: flex;
+  justify-content: center;
+}
+
+button{
+  background-color: #0699A6;
+  padding: 15px;
+  
 }
