@@ -23,12 +23,26 @@ li {
   margin-left: -40px;
 }
 
-img {
+.foto_perfil {
   display: flex;
   margin: 0 auto;
   margin-top: 160px;
+  width: 160px;
+  height: 160px;
+  border-radius: 50%;
+  display: block;
+  margin: 80px auto 0 auto;
+  opacity: 1;
 }
-
+.foto_dos {
+  width: 100px;
+  height: 100px;
+  position: absolute;
+  top: 70px;
+  left: 960px;
+  transform: rotate(0deg);
+  opacity: 1;
+}
 .nombre {
   display: flex;
   justify-content: center;
@@ -93,15 +107,6 @@ p {
   font-size: 14px;
 }
 
-img {
-  width: 160px;
-  height: 160px;
-  border-radius: 50%; 
-  display: block;
-  margin: 80px auto 0 auto; 
-  opacity: 1; 
-}
-
 h1 {
   max-width: 335px;
   font-family: "Playfair Display", serif;
@@ -111,6 +116,6 @@ h1 {
   letter-spacing: 0px;
 }
 
-.titulo_aboutme{
+.titulo_aboutme {
   margin-top: 100px;
 }
