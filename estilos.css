@@ -1,12 +1,14 @@
 body {
   display: flex;
   justify-content: center;
+  margin: 20px;
 }
 
 .pagina {
   width: 375px;
-  height: 2800px;
   background-color: rgb(194, 194, 255);
+  padding: 0 21px;
+  box-sizing: border-box;
 }
 
 .color_marron {
@@ -31,6 +33,12 @@ img {
   display: flex;
   justify-content: center;
   font-family: "Playfair Display", serif;
+  font-weight: 900;
+  font-size: 56px;
+  text-box-trim: none;
+  line-height: 46px;
+  letter-spacing: -2.17px;
+  text-align: center;
 }
 
 .logos {
@@ -55,18 +63,54 @@ img {
 }
 
 button {
-  background-color: #0093a0;
-  color: white; 
+  width: 225px;
+  height: 60px;
   display: block;
-  margin: 20px auto;
-  border: none; 
-  padding: 14px 40px;
-  font-weight: bold; 
-  letter-spacing: 1.5px;
-  font-size: 13px;
+  margin: 0 auto;
+  background-color: #0699a6;
+  color: white;
+  font-family: "PT Sans Narrow", sans-serif;
+  font-weight: 700;
+  font-size: 18px;
+  letter-spacing: 2px;
+  text-align: center;
 }
 
 .developer {
   display: flex;
   justify-content: center;
+  font-family: "PT Sans Narrow", sans-serif;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 20px;
+  letter-spacing: 2px;
+  text-align: center;
+  text-transform: uppercase;
+}
+
+p {
+  font-family: "PT Sans Narrow", sans-serif;
+  font-size: 14px;
+}
+
+img {
+  width: 160px;
+  height: 160px;
+  border-radius: 50%; 
+  display: block;
+  margin: 80px auto 0 auto; 
+  opacity: 1; 
+}
+
+h1 {
+  max-width: 335px;
+  font-family: "Playfair Display", serif;
+  font-weight: 900;
+  font-size: 32px;
+  line-height: 42px;
+  letter-spacing: 0px;
+}
+
+.titulo_aboutme{
+  margin-top: 100px;
 }
