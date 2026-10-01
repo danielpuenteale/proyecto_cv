@@ -7,28 +7,41 @@
 
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+
     <link
-      href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap"
+      href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700;900&family=PT+Sans+Narrow:wght@400;700&display=swap"
       rel="stylesheet"
     />
 
     <link rel="stylesheet" href="estilos.css" />
   </head>
+
   <body>
     <div class="pagina">
       <div class="fondo_marron">
-        <img
-          class="foto_perfil"
-          src="img/foto_hombre.png"
-          alt="imagen foto_hombre"
-        />
-        <img class="foto_dos" src="img/foto_dos.png" alt="imagen foto_dos" />
-        <p class="color_marron developer">DESIGNER / DEVELOPER</p>
-        <h1 class="nombre">Matt McDonald</h1>
-        <button>CONTACT ME</button>
+        <div class="header">
+          <img
+            class="foto_perfil"
+            src="img/foto_hombre.png"
+            alt="Imagen de Matt McDonald"
+          />
+
+          <img
+            class="foto_dos"
+            src="img/foto_dos.png"
+            alt="Elemento decorativo"
+          />
+
+          <p class="color_marron developer">DESIGNER / DEVELOPER</p>
+
+          <h1 class="nombre">Matt McDonald</h1>
+        </div>
+
+        <button type="button">CONTACT ME</button>
       </div>
 
       <h1 class="titulo_aboutme">About Me</h1>
+
       <p>
         Use this area to say something about yourself or describe your goals.
         Tum dicere exorsus est cur verear, ne ad id omnia referri oporteat,
@@ -37,9 +50,15 @@
         eligendi optio, cumque nihil ut ipsi auctori huius disciplinae placet:
         constituam, quid.
       </p>
+
+      <div class="cuadrado_azul"></div>
+
       <h1>Experience</h1>
+
       <p class="color_marron">FRONT-END DEVELOPER - DROPBOX</p>
+
       <p>Mar. 2020 - Present</p>
+
       <p>
         Describe your responsibilities. Tum dicere exorsus est cur verear, ne ad
         id omnia referri oporteat, ipsum per se ipsam voluptatem, quia
@@ -47,8 +66,11 @@
         deleniti atque insitam in ea quid est eligendi optio, cumque nihil ut
         ipsi auctori huius disciplinae placet: constituam, quid.
       </p>
+
       <p class="color_marron">Visual Designer — OutboundEngine</p>
+
       <p>Sept. 2017 - Mar. 2020</p>
+
       <p>
         Describe your responsibilities. Tum dicere exorsus est cur verear, ne ad
         id omnia referri oporteat, ipsum per se ipsam voluptatem, quia
@@ -56,8 +78,11 @@
         deleniti atque insitam in ea quid est eligendi optio, cumque nihil ut
         ipsi auctori huius disciplinae placet: constituam, quid.
       </p>
+
       <p class="color_marron">Lead Designer — Scrypt, Inc.</p>
+
       <p>Jun. 2014 - Sept. 2017</p>
+
       <p>
         Describe your responsibilities. Tum dicere exorsus est cur verear, ne ad
         id omnia referri oporteat, ipsum per se ipsam voluptatem, quia
@@ -65,8 +90,11 @@
         deleniti atque insitam in ea quid est eligendi optio, cumque nihil ut
         ipsi auctori huius disciplinae placet: constituam, quid.
       </p>
+
       <p class="color_marron">UI Designer — Pinger Inc.</p>
+
       <p>Jun. 2014 - Sept. 2017</p>
+
       <p>
         Describe your responsibilities. Tum dicere exorsus est cur verear, ne ad
         id omnia referri oporteat, ipsum per se ipsam voluptatem, quia
@@ -74,13 +102,21 @@
         deleniti atque insitam in ea quid est eligendi optio, cumque nihil ut
         ipsi auctori huius disciplinae placet: constituam, quid.
       </p>
-      <p>//CUADRO AZUL</p>
+
+      <div class="cuadrado_azul"></div>
+
       <h1>Education</h1>
+
       <p class="color_marron">
         BFA in Graphic Design — James Madison University
       </p>
+
       <p>Graduated 2014</p>
+
+      <div class="cuadrado_azul"></div>
+
       <p class="color_marron">Skillset</p>
+
       <ul>
         <li>Visual Design</li>
         <li>Illustration</li>
@@ -91,6 +127,7 @@
       </ul>
 
       <p class="color_marron">Awards</p>
+
       <ul>
         <li>Award 1 — Mar. 2019</li>
         <li>Award 2 — Sept. 2015</li>
@@ -100,11 +137,12 @@
       </ul>
 
       <p class="color_marron">Career Traits</p>
-      <p>
-        <strong>Holistic Designer</strong> -Design should be treated as a living
-        organism, guided by the environment it lives in as a whole.
 
-        <strong>User-Focused </strong>- I pay close attention to the user’s
+      <p>
+        <strong>Holistic Designer</strong> - Design should be treated as a
+        living organism, guided by the environment it lives in as a whole.
+
+        <strong>User-Focused</strong> - I pay close attention to the user's
         needs and pain points. I design with empathy. Launch, learn & iterate.
 
         <strong>Proactive Evolution</strong> - Curiosity and a desire to learn
@@ -115,18 +153,33 @@
       </p>
 
       <p class="color_marron">Recent Works</p>
-      <p>
-        thedonut.com → outboundengine.com → rswalsh.com → frondaustin.com →
-        tipyo.net → codefresh.io → carsoncreekranch.com →
-      </p>
-      <h1 class="titulo_abajo"><strong>Get in touch!</strong></h1>
-      <p class="correo">youremail@email.com</p>
-      <p class="num_telefono">512.273.1838</p>
+
+      <ul class="recent_works">
+        <li>thedonut.com →</li>
+        <li>outboundengine.com →</li>
+        <li>rswalsh.com →</li>
+        <li>frondaustin.com →</li>
+        <li>tipyo.net →</li>
+        <li>codefresh.io →</li>
+        <li>carsoncreekranch.com →</li>
+      </ul>
+
+      <h1 class="titulo_abajo">
+        <strong> Get in touch! </strong>
+      </h1>
+
+      <p class="correo_y_num">youremail@email.com</p>
+
+      <p class="correo_y_num">512.273.1838</p>
+
       <div class="logos">
-        <img src="img/facebook.png" alt="facebook" />
-        <img src="img/instagram.png" alt="instagram" />
-        <img src="img/linkedin.png" alt="linkedin" />
-        <img src="img/twitter.png" alt="twitter" />
+        <img src="img/facebook.png" alt="Facebook" />
+
+        <img src="img/instagram.png" alt="Instagram" />
+
+        <img src="img/linkedin.png" alt="LinkedIn" />
+
+        <img src="img/twitter.png" alt="Twitter" />
       </div>
     </div>
   </body>
