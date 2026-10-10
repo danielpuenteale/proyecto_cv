@@ -271,7 +271,6 @@ main{
   .pagina {
     width: 100%;
     max-width: 768px;
-
     padding: 0 50px;
   }
 
@@ -292,9 +291,8 @@ main{
   .foto_dos {
     width: 100px;
     height: 100px;
-
-    top: 40px;
-    right: 40px;
+    top: 50px;
+    right: 210px;
   }
 
   .developer {
@@ -362,7 +360,6 @@ main{
   .pagina {
     width: 100%;
     max-width: 1440px;
-
     padding: 0 80px;
   }
 
@@ -383,9 +380,8 @@ main{
   .foto_dos {
     width: 120px;
     height: 120px;
-
-    top: 50px;
-    right: 50px;
+    top: 225px;
+    right: 490px;
   }
 
   .developer {
