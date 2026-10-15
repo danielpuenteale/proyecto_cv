@@ -412,6 +412,19 @@ main {
     line-height: 30px;
   }
 
+  main {
+    display: flex;
+    flex-direction: row-reverse;
+  }
+
+  .columna2 {
+    display: flex;
+    order: 1;
+  }
+  .hidden{
+    display: none;
+  }
+
   h1 {
     max-width: 100%;
 
