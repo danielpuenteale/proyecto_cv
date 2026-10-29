@@ -12,17 +12,14 @@ html {
 }
 
 body {
-  display: flex;
-  justify-content: center;
-  width: auto;
   margin: 0;
   padding: 0;
+  width: 100%;
 }
 
+/* La página ocupa todo el ancho: así los fondos llegan a los bordes */
 .pagina {
   width: 100%;
-  max-width: 375px;
-  box-sizing: border-box;
 }
 
 /* =========================
@@ -93,12 +90,20 @@ li {
    HEADER
    ========================= */
 
+/* Fondo marrón a ancho completo */
+.fondo_marron {
+  width: 100%;
+  background-color: rgba(158, 140, 108, 0.1);
+}
+
+/* Contenido del header: centrado y con ancho máximo */
 .header {
   position: relative;
-  background-color: rgba(158, 140, 108, 0.1);
+  background-color: transparent;
   width: 100%;
+  max-width: 375px;
+  margin: 0 auto;
   padding: 13%;
-  box-sizing: border-box;
 }
 
 /* Foto principal */
@@ -180,7 +185,7 @@ button:active {
 }
 
 /* =========================
-   RECENT WORKS
+   MAIN / RECENT WORKS
    ========================= */
 
 .recent_works {
@@ -191,7 +196,12 @@ button:active {
   letter-spacing: 0;
   color: #0699a6;
 }
+
+/* Contenido principal: centrado y con ancho máximo */
 main {
+  width: 100%;
+  max-width: 375px;
+  margin: 0 auto;
   padding: 0 21px;
 }
 
@@ -199,17 +209,19 @@ main {
    FOOTER
    ========================= */
 
+/* Fondo marrón a ancho completo */
 .footer {
-  background-color: rgba(158, 140, 108, 0.1);
-
   width: 100%;
+  background-color: rgba(158, 140, 108, 0.1);
+}
 
-  /* No ponemos una altura fija demasiado grande */
+/* Contenido del footer: centrado y con ancho máximo */
+.footer-contenido {
+  width: 100%;
+  max-width: 375px;
+  margin: 0 auto;
   min-height: 380px;
-  height: auto;
-
   padding: 20px;
-  box-sizing: border-box;
 }
 
 /* Título del footer */
@@ -268,18 +280,12 @@ main {
    ========================= */
 
 @media (min-width: 600px) and (max-width: 899px) {
-  .pagina {
-    width: 100%;
-    max-width: 768px;
-    padding: 0 50px;
-  }
-
   /* Header */
 
   .header {
+    max-width: 668px;
     height: 501px;
     padding: 40px;
-    margin: 0;
   }
 
   .foto_perfil {
@@ -310,6 +316,12 @@ main {
     height: 60px;
   }
 
+  /* Main */
+
+  main {
+    max-width: 668px;
+  }
+
   /* Textos */
 
   p {
@@ -336,6 +348,10 @@ main {
 
   /* Footer */
 
+  .footer-contenido {
+    max-width: 668px;
+  }
+
   .titulo_abajo {
     font-size: 45px;
     line-height: 55px;
@@ -357,16 +373,11 @@ main {
    ========================= */
 
 @media (min-width: 900px) {
-  .pagina {
-    width: 100%;
-    max-width: 1440px;
-    padding: 0 80px;
-  }
-
   /* Header */
 
   .header {
-    height: 547px;
+    max-width: 1280px;
+    height: 647px;
     padding: 50px;
   }
 
@@ -413,12 +424,14 @@ main {
   }
 
   main {
+    max-width: 1280px;
     display: flex;
     flex-direction: row-reverse;
     gap: 106px;
   }
 
-  .columna2 {
+  .columna_2 {
+    margin-top: 100px;
   }
 
   .hidden {
@@ -446,7 +459,8 @@ main {
 
   /* Footer */
 
-  .footer {
+  .footer-contenido {
+    max-width: 1280px;
     min-height: 400px;
     padding: 40px;
   }
