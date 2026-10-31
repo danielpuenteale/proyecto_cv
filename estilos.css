@@ -140,6 +140,7 @@ li {
   line-height: 46px;
   letter-spacing: -2.17px;
   text-align: center;
+  flex-direction: column;
 }
 
 /* Botón */
@@ -258,6 +259,15 @@ main {
 
   margin: 0;
 }
+.contacto {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.separador {
+  display: none;
+}
 
 /* =========================
    LOGOS
@@ -373,109 +383,165 @@ main {
    ========================= */
 
 @media (min-width: 900px) {
-  /* Header */
+  /* =========================
+   PC
+   900px EN ADELANTE
+   ========================= */
 
-  .header {
-    max-width: 1280px;
-    height: 647px;
-    padding: 50px;
-  }
+  @media (min-width: 900px) {
+    /* Header: foto a la izquierda, texto a la derecha */
 
-  .foto_perfil {
-    width: 220px;
-    height: 220px;
-    margin-top: 30px;
-  }
+    .header {
+      max-width: 1280px;
+      height: auto;
+      padding: 80px 50px;
 
-  .foto_dos {
-    width: 120px;
-    height: 120px;
-    top: 225px;
-    right: 482px;
-  }
+      display: flex;
+      flex-direction: row;
+      align-items: center;
+      justify-content: center;
+      gap: 60px;
+    }
 
-  .developer {
-    font-size: 18px;
-    line-height: 24px;
-  }
+    /* Contenedor de la foto + imagen decorativa */
+    .header_foto {
+      position: relative;
+      flex-shrink: 0;
+    }
 
-  .nombre {
-    font-size: 80px;
-    line-height: 70px;
-  }
+    .foto_perfil {
+      width: 220px;
+      height: 220px;
+      display: block;
+      margin: 0;
+    }
 
-  button {
-    width: 250px;
-    height: 65px;
+    /* Imagen decorativa: solapada en la esquina inferior derecha de la foto */
+    .foto_dos {
+      width: 120px;
+      height: 120px;
+      top: auto;
+      left: auto;
+      right: -45px;
+      bottom: -35px;
+    }
 
-    font-size: 20px;
-  }
+    /* Bloque de texto alineado a la izquierda */
+    .header_texto {
+      display: flex;
+      flex-direction: column;
+      align-items: flex-start;
+    }
 
-  /* Textos */
+    .developer {
+      justify-content: flex-start;
+      text-align: left;
+      margin: 0 0 10px 0;
+      font-size: 18px;
+      line-height: 24px;
+    }
 
-  p {
-    font-size: 22px;
-    line-height: 36px;
-  }
+    h1.nombre {
+      max-width: 560px;
+      justify-content: flex-start;
+      text-align: left;
+      margin: 0 0 30px 0;
+      font-size: 80px;
+      line-height: 70px;
+      flex-direction: column;
+    }
 
-  .color_marron {
-    font-size: 22px;
-    line-height: 30px;
-  }
+    button {
+      width: 250px;
+      height: 65px;
+      margin: 0;
+      font-size: 20px;
+    }
 
-  main {
-    max-width: 1280px;
-    display: flex;
-    flex-direction: row-reverse;
-    gap: 106px;
-  }
+    /* Textos */
 
-  .columna_2 {
-    margin-top: 100px;
-  }
+    p {
+      font-size: 22px;
+      line-height: 36px;
+    }
 
-  .hidden {
-    display: none;
-  }
+    .color_marron {
+      font-size: 22px;
+      line-height: 30px;
+    }
 
-  h1 {
-    max-width: 100%;
+    main {
+      max-width: 1280px;
+      display: flex;
+      flex-direction: row-reverse;
+      gap: 106px;
+    }
 
-    font-size: 45px;
-    line-height: 55px;
-  }
+    .columna_2 {
+      margin-top: 100px;
+    }
 
-  ul {
-    font-size: 22px;
-    line-height: 36px;
-  }
+    .hidden {
+      display: none;
+    }
 
-  /* Separador */
+    h1 {
+      max-width: 100%;
+      font-size: 45px;
+      line-height: 55px;
+    }
 
-  .cuadrado_azul {
-    width: 65px;
-    height: 12px;
-  }
+    ul {
+      font-size: 22px;
+      line-height: 36px;
+    }
 
-  /* Footer */
+    /* Separador */
 
-  .footer-contenido {
-    max-width: 1280px;
-    min-height: 400px;
-    padding: 40px;
-  }
+    .cuadrado_azul {
+      width: 65px;
+      height: 12px;
+    }
 
-  .titulo_abajo {
-    font-size: 50px;
-    line-height: 60px;
-  }
+    /* Footer */
 
-  .correo_y_num {
-    font-size: 30px;
-    line-height: 40px;
-  }
+    .footer-contenido {
+      max-width: 1280px;
+      min-height: 300px;
+      padding: 40px;
+    }
 
-  .logos {
-    gap: 25px;
+    .titulo_abajo {
+      font-size: 50px;
+      line-height: 60px;
+      margin-top: 50px;
+    }
+
+    /* Email y teléfono en una sola línea con separador */
+    .contacto {
+      flex-direction: row;
+      justify-content: center;
+      align-items: center;
+      gap: 20px;
+    }
+
+    .separador {
+      display: block;
+      font-family: "Playfair Display", serif;
+      font-weight: 900;
+      font-size: 30px;
+      line-height: 40px;
+      color: #0699a6;
+    }
+
+    .correo_y_num {
+      font-size: 30px;
+      line-height: 40px;
+    }
+
+    .logos {
+      gap: 25px;
+      margin-top: 30px;
+    }
   }
 }
