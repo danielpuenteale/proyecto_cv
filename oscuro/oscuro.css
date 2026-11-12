@@ -1,0 +1,95 @@
+/* =========================
+   MODO OSCURO
+   (se carga después de ../estilos.css)
+   ========================= */
+
+:root {
+  --fondo: #08141c;
+  --fondo-header: #0c1b26;
+  --fondo-footer: #050e14;
+  --texto: #ffffff;
+  --texto-suave: #c9d3da;
+  --dorado: #9e8c6c;
+  --turquesa: #0699a6;
+}
+
+/* =========================
+   GENERAL
+   ========================= */
+
+body {
+  background-color: var(--fondo);
+  color: var(--texto);
+}
+
+p,
+li {
+  color: var(--texto-suave);
+}
+
+h1,
+strong {
+  color: var(--texto);
+}
+
+.color_marron {
+  color: var(--dorado);
+}
+
+.recent_works,
+.recent_works li {
+  color: var(--turquesa);
+}
+
+.cuadrado_azul {
+  background-color: var(--turquesa);
+}
+
+/* =========================
+   HEADER (recto, sin borde)
+   ========================= */
+
+.fondo_marron {
+  background-color: var(--fondo-header);
+  border: none;
+  box-shadow: none;
+}
+
+.header {
+  border: none;
+  box-shadow: none;
+}
+
+.nombre {
+  color: var(--texto);
+}
+
+button {
+  background-color: var(--turquesa);
+  color: var(--texto);
+  border: none;
+}
+
+/* =========================
+   FOOTER
+   ========================= */
+
+.footer {
+  background-color: var(--fondo-footer);
+  border: none;
+}
+
+.titulo_abajo {
+  color: var(--texto);
+}
+
+.correo_y_num,
+.separador {
+  color: var(--turquesa);
+}
+
+/* Iconos de redes en turquesa (bórralo si tus PNG ya son claros) */
+.logos img {
+  filter: brightness(0) saturate(100%) invert(48%) sepia(75%) saturate(600%)
+    hue-rotate(143deg) brightness(92%);
+}
