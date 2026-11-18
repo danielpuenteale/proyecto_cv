@@ -169,11 +169,7 @@ button {
 
 /* Evita borde al pulsar */
 
-button:focus,
-button:active {
-  outline: none;
-  border: none;
-}
+
 
 /* =========================
    SEPARADOR AZUL

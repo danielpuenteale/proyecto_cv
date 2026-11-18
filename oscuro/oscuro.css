@@ -36,10 +36,6 @@ strong {
   color: var(--dorado);
 }
 
-.recent_works,
-.recent_works li {
-  color: var(--turquesa);
-}
 
 .cuadrado_azul {
   background-color: var(--turquesa);
@@ -86,10 +82,4 @@ button {
 .correo_y_num,
 .separador {
   color: var(--turquesa);
-}
-
-/* Iconos de redes en turquesa (bórralo si tus PNG ya son claros) */
-.logos img {
-  filter: brightness(0) saturate(100%) invert(48%) sepia(75%) saturate(600%)
-    hue-rotate(143deg) brightness(92%);
 }
